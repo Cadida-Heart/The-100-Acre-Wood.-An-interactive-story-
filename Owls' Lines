@@ -1,5 +1,6 @@
- owl_line = {
-...     'owl_1': "Ah yes, Good to see you again. ",
-...     'owl_2': "Yes, yes of course. Now as I was saying. ",
-...     'owl_3': "Be brave, little Piglet! ",
-...     'owl_4': "Pooh!\nWaspuypop that you? 
+owl_line = {
+     'owl_1': "Ah yes, Good to see you again. ",
+     'owl_2': "Yes, yes of course. Now as I was saying. ",
+     'owl_3': "Be brave, little Piglet! ",
+     'owl_4': "Pooh!\nWaspuypop that you?" 
+}
