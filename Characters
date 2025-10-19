@@ -1,9 +1,9 @@
->>> character = { #partial list of characters
-...     'pooh_full': 'Winnie the Pooh- ',
-...     'pooh': 'Pooh- ',
-...     'chris_full': 'Christopher Robin- ', #NPC
-...     'chris': 'Christopher- ',
-...     'owl': 'Owl- ',#NPC
-...     'pig': 'Piglet- '
-... }
+character = { #partial list of characters
+     'pooh_full': 'Winnie the Pooh- ',
+     'pooh': 'Pooh- ',
+     'chris_full': 'Christopher Robin- ', #NPC
+     'chris': 'Christopher- ',
+     'owl': 'Owl- ',#NPC
+     'pig': 'Piglet- '
+ }
 
