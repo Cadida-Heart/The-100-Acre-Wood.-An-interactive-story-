@@ -1,0 +1,28 @@
+character = { #partial list of characters
+     'pooh_full': 'Winnie the Pooh- ',
+     'pooh': 'Pooh- ',
+     'chris_full': 'Christopher Robin- ', #NPC
+     'chris': 'Christopher- ',
+     'owl': 'Owl- ',#NPC
+     'pig': 'Piglet- '
+}
+owl_line = {
+     'owl_1': "Ah yes, Good to see you again. ",
+     'owl_2': "Yes, yes of course. Now as I was saying. ",
+     'owl_3': "Be brave, little Piglet! ",
+     'owl_4': "Pooh!\nWaspuypop that you?" 
+}
+pig_line = {
+     'pig_1': "Oh dear! Oh dear, DEARRR! ",
+     'pig_2': "If you say so Owl. ",
+     'pig_3': "If you say so Pooh. ",
+     'pig_4': "This was my grandfather's house. ",
+     'pig_5': "Do you think "
+}
+choice = input("Who should speak? Type 'pig' or 'owl': ")
+if choice.lower() == "pig":
+    print(f"{character['pig']}{pig_line['pig_1']}")
+elif choice.lower() == "owl":
+    print(f"{character['owl']}{owl_line['owl_1']}")
+else:
+    print("Sorry, that character is not available yet!")
