@@ -26,3 +26,13 @@ elif choice.lower() == "owl":
     print(f"{character['owl']}{owl_line['owl_1']}")
 else:
     print("Sorry, that character is not available yet!")
+choice = input("Who should speak? Type 'pig' or 'owl': ")
+if choice.lower() == "pig":
+    print(f"{character['pig']}{pig_line['pig_1']}")
+    # After Piglet says his line, have Owl respond:
+    print(f"{character['owl']}{owl_line['owl_3']}")
+elif choice.lower() == "owl":
+    print(f"{character['owl']}{owl_line['owl_3']}")
+else:
+    print("Sorry, that character is not available yet!")
+    
