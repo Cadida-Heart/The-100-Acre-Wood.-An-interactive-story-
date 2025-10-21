@@ -10,14 +10,21 @@ owl_line = {
      'owl_1': "Ah yes, Good to see you again. ",
      'owl_2': "Yes, yes of course. Now as I was saying. ",
      'owl_3': "Be brave, little Piglet! ",
-     'owl_4': "Pooh!\nWaspuypop that you?" 
+     'owl_4': "Pooh!\nWas that you?" 
 }
 pig_line = {
+     'pig_into':"Oh dear, you scared me. What would you like to do today?\nI always enjoy spending time with you ", 
      'pig_1': "Oh dear! Oh dear, DEARRR! ",
      'pig_2': "If you say so Owl. ",
      'pig_3': "If you say so Pooh. ",
      'pig_4': "This was my grandfather's house. ",
      'pig_5': "Do you think "
+}
+pooh_line = {
+    'pooh_intro': "Oh! HM HM. Hello my name is Pooh, Winnie the Pooh.\nI am grabbing a smackerel of honey! ",
+    'pooh_1': "Yum, yum, yum! ",
+    'pooh_2': "I wasn't going to ear it, I was just going to taste it.",
+    'pooh_3': "It's so much more friendly with two."
 }
 choice = input("Who should speak? Type 'pig' or 'owl': ")
 if choice.lower() == "pig":
@@ -35,4 +42,8 @@ elif choice.lower() == "owl":
     print(f"{character['owl']}{owl_line['owl_3']}")
 else:
     print("Sorry, that character is not available yet!")
-    
+choice = input("Pooh eating some honey at Owls' house. Type 'owl':")
+if choice.lower() == 'owl':
+    print(f"{character['owl']}{owl_line['owl_4']}")
+else:
+    print("Sorry, for this portion of the story you can only select Owl.")
