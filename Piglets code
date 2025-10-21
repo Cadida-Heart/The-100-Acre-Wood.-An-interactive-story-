@@ -1,0 +1,5 @@
+line = f"{character['pig']}{pig_line['pig_4']}"
+for letter in line:
+    print(letter, end='', flush = True)
+    time.sleep(0.1)
+print()
