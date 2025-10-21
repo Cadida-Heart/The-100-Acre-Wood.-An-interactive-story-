@@ -2,5 +2,6 @@ owl_line = {
      'owl_1': "Ah yes, Good to see you again. ",
      'owl_2': "Yes, yes of course. Now as I was saying. ",
      'owl_3': "Be brave, little Piglet! ",
-     'owl_4': "Pooh!\nWaspuypop that you?" 
+     'owl_4': "Pooh!\nWas that you?",
+     'owl_rob': "You know my great uncle Robert on his 103rd birthday was still claiming to be 97.\nCan you Imagine. His portrait is still hanging in my house you know. I am sorry dear chap, what were you saying?"
 }
