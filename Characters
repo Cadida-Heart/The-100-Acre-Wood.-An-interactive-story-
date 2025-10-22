@@ -4,6 +4,6 @@ character = { #partial list of characters
      'chris_full': 'Christopher Robin- ', #NPC
      'chris': 'Christopher- ',
      'owl': 'Owl- ',#NPC
-     'pglt': 'Piglet- '
+     'piglet': 'Piglet- '
  }
 
