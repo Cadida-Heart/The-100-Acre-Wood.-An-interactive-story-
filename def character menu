@@ -1,0 +1,15 @@
+def character_menu():
+    while True:
+        choice = input("Who would you like to talk to? Type 'piglet', 'owl', or 'quit':").lower()
+        if choice == 'piglet':
+            for line in piglet_line.values():
+                speak(character['piglet'], line)
+        elif choice == 'owl':
+            for line in owl_line.values():
+                speak(character['owl'], line)
+        elif choice == 'quit':
+            print("Goodbye from the Hundred Acre Wood!")
+            break
+        else:
+            print ("That's not an option. Please pick 'piglet','owl',or'quit'.")
+
