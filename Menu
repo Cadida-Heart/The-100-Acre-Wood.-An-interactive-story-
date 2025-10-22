@@ -3,7 +3,7 @@ while True:
     choice = choice.lower()# should fix case sesitivity for user.
     if choice.lower() == 'piglet':
         for line in pig_line.values():
-            print(f"{character['pig']}{line}")
+            print(f"{character['pglt']}{line}")
             time.sleep(1)
     elif choice.lower() == 'pooh':
         for line in pooh_line.values():
