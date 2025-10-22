@@ -1,7 +1,7 @@
-pig_line = {
-     'pig_1': "Oh dear! Oh dear, DEARRR! ",
-     'pig_2': "If you say so Owl. ",
-     'pig_3': "If you say so Pooh. ",
-     'pig_4': "This was my grandfather's house. ",
-     'pig_5': "Do you think "
+pglt_line = {
+     'pglt_1': "Oh dear! Oh dear, DEARRR! ",
+     'pglt_2': "If you say so Owl. ",
+     'pglt_3': "If you say so Pooh. ",
+     'pglt_4': "This was my grandfather's house. ",
+     'pglt_5': "Do you think "
 }
