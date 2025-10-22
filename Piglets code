@@ -1,4 +1,4 @@
-line = f"{character['pglt']}{pglt_line['pglt_4']}"
+line = f"{character['piglet']}{piglet_line['piglet_4']}"
 for letter in line:
     print(letter, end='', flush = True)
     time.sleep(0.1)
