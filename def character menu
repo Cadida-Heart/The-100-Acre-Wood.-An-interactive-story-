@@ -1,15 +1,57 @@
-def character_menu():
-    while True:
-        choice = input("Who would you like to talk to? Type 'piglet', 'owl', or 'quit':").lower()
-        if choice == 'piglet':
-            for line in piglet_line.values():
-                speak(character['piglet'], line)
-        elif choice == 'owl':
-            for line in owl_line.values():
-                speak(character['owl'], line)
-        elif choice == 'quit':
-            print("Goodbye from the Hundred Acre Wood!")
-            break
-        else:
-            print ("That's not an option. Please pick 'piglet','owl',or'quit'.")
+import time
+character = { #partial list of characters
+    'pooh_full': 'Winnie the Pooh- ',
+    'pooh': 'Pooh- ',
+    'chris_full': 'Christopher Robin- ', #NPC
+    'chris': 'Christopher- ',
+    'owl': 'Owl- ',#NPC
+    'piglet': 'Piglet- '
+}
+owl_line = {
+     'owl_1': "Ah yes, Good to see you again. ",
+     'owl_2': "Yes, yes of course. Now as I was saying. ",
+     'owl_3': "Be brave, little Piglet! ",
+     'owl_4': "Pooh!\nWas that you?",
+     'owl_rob': "You know my great uncle Robert on his 103rd birthday was still claiming to be 97.\nCan you Imagine. His portrait is still hanging in my house you know. I am sorry dear chap, what were you saying?"
+}
+piglet_line = {
+    'piglet_intro': "Oh! Oh dear, you scared me!\nMy name is Piglet, I am on my ways to Poohs' house. ",
+    'piglet_1': "Oh dear! Oh dear, DEARRR! ",
+    'piglet_2': "If you say so Owl. ",
+    'piglet_3': "If you say so Pooh. ",
+    'piglet_4': "This was my grandfather's house. ",
+    'piglet_5': "Do you think "
+}
+pooh_line = {
+    'pooh_intro': "Oh! HM HM. Hello my name is Pooh, Winnie the Pooh.\nI am grabbing a smackerel of honey! ",
+    'pooh_1': "Yum, yum, yum! ",
+    'pooh_2': "I wasn't going to ear it, I was just going to taste it.",
+    'pooh_3': "It's so much more friendly with two."
+}
+# Helper Functions
+def slow_print(text, delay=0.05):
+    for char in text:
+        print(char, end='', flush=True)
+        time.sleep(delay)
+    print() #new line at the end
 
+def speak(speaker, line):
+    slow_print(speaker + line, delay=0.04)
+
+def character_menu():
+    print("Welcome to the Hundred Acre Wood!")
+    while True:
+        choice = input("\nWho would you like to talk to? Type 'piglet', 'pooh' or 'quit': ").lower()
+
+        if choice == 'piglet':
+            speak(character['piglet'], piglet_line['piglet_intro'])
+
+        elif choice == 'pooh':
+            speak(character['pooh'], pooh_line['pooh_intro'])
+
+        elif choice == 'quit':
+            slow_print("Goodbye from the Hundred Acre Wood!", delay=0.05)
+            break
+
+        else:
+            print("That's not an option. Please pick 'piglet', 'pooh', or 'quit'.")
