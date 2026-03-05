@@ -1,0 +1,3 @@
+if char not in dialog_by_char:
+    dialog_by_char[char] = []
+dialog_by_char[char].append(line)
